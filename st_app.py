@@ -56,7 +56,7 @@ def main():
 			orig_shape = img_array.shape
 			img = preProc([img_array])
 			
-			colorImg = recolor(model, img, orig_shape)
+			colorImg = recolor(model, img, orig_shape[0:2])
 			
 			col_bw, col_color = st.columns(2)
 
