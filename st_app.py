@@ -28,7 +28,7 @@ def recolor(model, img_array):
 
 def main():
 	# link = 'https://images.unsplash.com/photo-1558056524-97698af21ff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-	st.image(link, use_column_width=True)
+	# st.image(link, use_column_width=True)
 
 	st.title("Image Colorization via Deep Learning")
 
