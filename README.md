@@ -14,9 +14,11 @@
 
 ## Built With 🚀
 
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-- [Streamlit](https://streamlit.io/)
-- [python](https://www.python.org/)
+[Flask](https://flask.palletsprojects.com/en/2.0.x/)
+<br>
+[Streamlit](https://streamlit.io/)
+<br>
+[python](https://www.python.org/)
 
 ## Contributing 🤝
 
