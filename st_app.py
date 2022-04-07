@@ -19,12 +19,14 @@ def preProc(A):
 	A = tf.image.rgb_to_hsv(B)
 	return A[:,:,:,-1:]
 
-def recolor(model, img_array):
+def recolor(model, img_array, orig_shape):
 	
 	print(img_array.shape)
 	predImg = model.predict(img_array, verbose=0)
 	predImg = tf.image.hsv_to_rgb(predImg)
-	return np.array(predImg)
+	predImg = np.array(predImg)
+	predImg = tf.image.resize(predImg, orig_shape)
+	return predImg
 
 def main():
 	# link = 'https://images.unsplash.com/photo-1558056524-97698af21ff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
@@ -51,9 +53,10 @@ def main():
 			image = Image.open(img_file_buffer)
 			img_array = np.array(image)
 
+			orig_shape = img_array.shape
 			img = preProc([img_array])
 			
-			colorImg = recolor(model, img)
+			colorImg = recolor(model, img, orig_shape)
 			
 			col_bw, col_color = st.columns(2)
 
