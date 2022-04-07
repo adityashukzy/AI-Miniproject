@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
+@st.cache()
 def load_model(path):
 	model = keras.models.load_model(path)
 	model.summary()
@@ -38,7 +39,7 @@ def main():
 
 	st.write("Keep in mind that it may take us some time to colorize this image.")
 
-	img_file_buffer = st.file_uploader("Upload Black & White Image", type=['png', 'jpg'])
+	img_file_buffer = st.file_uploader("Upload Black & White Image", type=['png', 'jpg', 'jpeg'])
 	st.set_option('deprecation.showfileUploaderEncoding', False)
 
 	model_path = 'recolor.h5'
