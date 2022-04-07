@@ -1,5 +1,5 @@
 <div align="center" display="flex">
-<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/73/ea/bf/73eabfd0-dd21-b504-9c59-0a33bcc7f370/source/512x512bb.jpg" alt="Colorizer" height="250"/>
+<img src="./Images/colorizer.png" alt="Colorizer" height="250"/>
 <h1>Colorizer</h1>
 
 <div align="center">
