@@ -37,7 +37,7 @@ def main():
 	st.subheader("Hello! This is a web-app which leverages state-of-the-art deep learning architectures such as autoencoders to colorize black & white or grayscale images.")
 
 	st.write("The deep learning model is built on the idea of Variational Autoencoders. This approach was first introduced by Richard Zhang in his paper [Colorful Image Colorization](https://arxiv.org/abs/1603.08511). These autoencoders cleverly store the most important details of a big image into a small space and then try to recreate this image in color. We penalize the autoencoder when it doesn't do a good job until it begins to get it right.", unsafe_allow_htl=True)
-	st.write("Feel free to head to our [Github repository](https://github.com/Data-Science-Community-SRM/Image-Recolorization) to explore the code.")
+	st.write("Feel free to head to our [Github repository](https://github.com/adityashukzy/AI-Miniproject/tree/streamlit) to explore the code.")
 
 	st.write("Keep in mind that it may take us some time to colorize this image.")
 
