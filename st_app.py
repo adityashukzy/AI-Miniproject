@@ -24,8 +24,8 @@ def recolor(model, img_array, orig_shape):
 	print(img_array.shape)
 	predImg = model.predict(img_array, verbose=0)
 	predImg = tf.image.hsv_to_rgb(predImg)
-	predImg = np.array(predImg)
 	predImg = tf.image.resize(predImg, orig_shape)
+	predImg = np.array(predImg)
 	return predImg
 
 def main():
